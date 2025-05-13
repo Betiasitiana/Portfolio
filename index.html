@@ -3,12 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio de Betiasitiana</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/framer-motion@10.12.16/dist/framer-motion.umd.js"></script>
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
 </head>
-<body>
-    <h1>Bienvenue sur mon portfolio</h1>
-    <p>Je suis Betiasitiana, développeur d'application avec une passion pour le code.</p>
+<body class="bg-gray-100 text-gray-900">
+    <!-- Header -->
+    <header class="bg-blue-700 text-white p-6 text-center">
+        <img src="images/profil.jpg" alt="Photo de profil" class="w-32 h-32 mx-auto rounded-full mb-4 shadow-lg hover-scale">
+        <h1 class="text-4xl font-bold">Betiasitiana RANDRIAMANANAJARA</h1>
+        <p class="text-lg">Développeur d'application | Passionné de technologie</p>
+    </header>
+
+    <!-- À propos -->
+    <section class="my-10 px-8">
+        <h2 class="text-3xl font-semibold mb-4">À propos de moi</h2>
+        <p class="text-lg">Avec une licence en développement d'application et une expérience en gestion administrative, je suis un développeur polyvalent capable de créer des applications modernes et sécurisées. Je suis motivé par l'innovation et l'amélioration continue, avec une passion pour les nouvelles technologies et le design intuitif.</p>
+    </section>
+
+    <!-- Compétences -->
+    <section class="my-10 px-8">
+        <h2 class="text-3xl font-semibold mb-4">Compétences</h2>
+        <ul class="grid grid-cols-2 gap-4 text-lg">
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>HTML/CSS</li>
+            <li>React</li>
+            <li>Git/GitHub</li>
+            <li>Node.js</li>
+            <li>MongoDB</li>
+            <li>SQL</li>
+        </ul>
+    </section>
+
+    <!-- Projets -->
+    <section class="my-10 px-8">
+        <h2 class="text-3xl font-semibold mb-4">Mes Projets</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-2xl shadow-lg hover-scale">
+                <h3 class="text-2xl font-bold mb-2">Portefeuille automatique</h3>
+                <p class="mb-4">Application sécurisée pour la gestion des finances avec chiffrement, authentification et graphiques interactifs.</p>
+                <a href="#" class="text-blue-700 font-semibold">Voir le projet</a>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-lg hover-scale">
+                <h3 class="text-2xl font-bold mb-2">Booster Facebook</h3>
+                <p class="mb-4">Guide complet pour augmenter la visibilité et les ventes sur Facebook, conçu pour les entrepreneurs malgaches.</p>
+                <a href="#" class="text-blue-700 font-semibold">Voir le projet</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="my-10 px-8">
+        <h2 class="text-3xl font-semibold mb-4">Contact</h2>
+        <p>Email : <a href="mailto:betiasitiana@example.com" class="text-blue-700">betiasitiana@example.com</a></p>
+        <p>GitHub : <a href="https://github.com/Betiasitiana" class="text-blue-700">Betiasitiana</a></p>
+        <p>TikTok : @betiasitiana</p>
+        <p>Instagram : @betiasitiana</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-700 text-white p-6 text-center mt-10">
+        <p>&copy; 2025 Betiasitiana RANDRIAMANANAJARA - Tous droits réservés</p>
+    </footer>
 </body>
 </html>
 
