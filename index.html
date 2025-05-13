@@ -6,21 +6,13 @@
     <title>Portfolio de Betiasitiana</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <script src="https://unpkg.com/framer-motion@10.12.16/dist/framer-motion.umd.js"></script>
-    <style>
-        body {
-            scroll-behavior: smooth;
-        }
-        .hover-scale:hover {
-            transform: scale(1.05);
-            transition: transform 0.3s ease-in-out;
-        }
-    </style>
 </head>
 <body class="bg-gray-100 text-gray-900">
     <!-- Header -->
     <header class="bg-blue-700 text-white p-6 text-center">
-        <img src="images/profil.jpg" alt="Photo de profil" class="w-32 h-32 mx-auto rounded-full mb-4 shadow-lg hover-scale">
+        <img src="images/profil.jpg" alt="Photo de profil" class="profile-img w-32 h-32 mx-auto rounded-full mb-4 shadow-lg">
         <h1 class="text-4xl font-bold">Betiasitiana RANDRIAMANANAJARA</h1>
         <p class="text-lg">Développeur d'application | Passionné de technologie</p>
     </header>
@@ -50,12 +42,12 @@
     <section id="projects" class="my-10 px-8">
         <h2 class="text-3xl font-semibold mb-4">Mes Projets</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="bg-white p-6 rounded-2xl shadow-lg hover-scale">
+            <div class="project-card bg-white p-6 rounded-2xl shadow-lg">
                 <h3 class="text-2xl font-bold mb-2">Portefeuille automatique</h3>
                 <p class="mb-4">Application sécurisée pour la gestion des finances avec chiffrement, authentification et graphiques interactifs.</p>
                 <a href="projects/portefeuille.html" class="text-blue-700 font-semibold">Voir le projet</a>
             </div>
-            <div class="bg-white p-6 rounded-2xl shadow-lg hover-scale">
+            <div class="project-card bg-white p-6 rounded-2xl shadow-lg">
                 <h3 class="text-2xl font-bold mb-2">Booster Facebook</h3>
                 <p class="mb-4">Guide complet pour augmenter la visibilité et les ventes sur Facebook, conçu pour les entrepreneurs malgaches.</p>
                 <a href="projects/booster-facebook.html" class="text-blue-700 font-semibold">Voir le projet</a>
@@ -66,7 +58,7 @@
     <!-- Formulaire de Contact -->
     <section id="contact" class="my-10 px-8">
         <h2 class="text-3xl font-semibold mb-4">Me Contacter</h2>
-        <form action="https://formsubmit.co/betiasitiana@example.com" method="POST" class="bg-white p-6 rounded-2xl shadow-lg">
+        <form action="https://formsubmit.co/betiasitiana@example.com" method="POST" class="contact-form bg-white p-6 rounded-2xl shadow-lg">
             <label class="block mb-2 font-semibold">Nom :</label>
             <input type="text" name="name" class="w-full mb-4 p-2 border rounded-md" required>
 
@@ -76,7 +68,7 @@
             <label class="block mb-2 font-semibold">Message :</label>
             <textarea name="message" class="w-full mb-4 p-2 border rounded-md" rows="5" required></textarea>
 
-            <button type="submit" class="bg-blue-700 text-white py-2 px-6 rounded-md hover-scale">Envoyer</button>
+            <button type="submit" class="submit-button bg-blue-700 text-white py-2 px-6 rounded-md">Envoyer</button>
         </form>
     </section>
 
